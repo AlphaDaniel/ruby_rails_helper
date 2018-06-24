@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require "ruby_rails_helper"
+
+Pry.start(__FILE__)

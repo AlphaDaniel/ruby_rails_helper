@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require "ruby_rails_helper"
+
+RubyRailsHelper::load_test
+
+RubyRailsHelper::Dummy.load_test
+
+RubyRailsHelper::CLI.start
