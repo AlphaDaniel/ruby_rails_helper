@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry", "~> 0.11"
   
   spec.add_runtime_dependency "colorize", "~> 0.8"
+  spec.add_runtime_dependency "mechanize", "~> 2.7"
 end

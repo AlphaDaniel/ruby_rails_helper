@@ -3,8 +3,12 @@ module RubyRailsHelper
     
     # scrapes ruby-doc.org Core API
     def self.rdo_core
-      puts 'rdo_core scraper was loaded'.green
+      agent = Mechanize.new
+      page = agent.get('https://ruby-doc.org/core-2.5.1/')
+      
+      # in progress
     end
     
   end
 end
+
