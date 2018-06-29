@@ -1,5 +1,15 @@
 sudo: false
 language: ruby
+cache: bundler
 rvm:
   - 2.5.0
+script: 'bundle exec rspec'
 before_install: gem install bundler -v 1.16.2
+
+
+notifications:
+  email:
+    recipients:
+      - daniel.nunez.nyc@gmail.com
+    on_failure: change
+    on_success: never
