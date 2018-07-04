@@ -3,7 +3,7 @@ require "ruby_rails_helper/ext/pry"
 require "colorize"
 require 'mechanize'
 
-require "ruby_rails_helper/scrapers/rdo"
+require "ruby_rails_helper/scrapers/indexer"
 require "ruby_rails_helper/cli"
 
 module RubyRailsHelper
