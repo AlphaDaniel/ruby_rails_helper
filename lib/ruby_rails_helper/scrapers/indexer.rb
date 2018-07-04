@@ -2,6 +2,14 @@ module RubyRailsHelper
   # Scrapes doc url's and titles. Creates Doc instances.
   class Indexer
     
+    # Chooses scraper based on source param.
+    def self.index(source)
+      case source
+      when 'rdo'
+        rdo_core
+      end
+    end
+    
     # Scrapes ruby-doc.org Core API
     def self.rdo_core
       agent = Mechanize.new
@@ -13,7 +21,7 @@ module RubyRailsHelper
       method_index = page.search('#method-index')
       
       # in progress
-    end    
+    end 
     
   end
 end

@@ -3,4 +3,4 @@ require "bundler/setup"
 require "ruby_rails_helper"
 
 # RubyRailsHelper::CLI.start
-RubyRailsHelper::Indexer.rdo_core
+RubyRailsHelper::Indexer.index("rdo")
