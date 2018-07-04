@@ -19,7 +19,7 @@ module RubyRailsHelper
       
       class_index = page.search('#class-index')
       method_index = page.search('#method-index')
-      
+     
       # in progress
     end 
     
